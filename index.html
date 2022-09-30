@@ -9,24 +9,80 @@
     <link href="reset.css" rel="stylesheet" />
     <link href="estiloinsta.css" rel="stylesheet" />
 </head>
+
 <body>
     <div class="topo">
         <div class="caixa-logo">
-            <img src="logo.png" />    
+            <ion-icon name="logo-instagram" class="insta-icon"></ion-icon> 
+            <img src="logo.png"  />    
         </div>    
-        
-    </div>
-    
-    <div class="sidebar">
-        <img src="perfil.jpg" class="user" />
-        <div class="user-name">
-            <h1>joaolucas_</h1>
-            <h2>João Lucas Mendes Wetler</h2>
+        <div class="pesquisa">
+            <input type="text" name="Nome" size="25" class="pesquisar" placeholder="Pesquisar"/>   
+        </div>
+        <div class="icones">
+            <ion-icon name="paper-plane-outline" class="icon"></ion-icon> 
+            <ion-icon name="compass-outline" class="icon out"></ion-icon>
+            <ion-icon name="heart-outline" class="icon out"></ion-icon>   
+            <ion-icon name="person-outline" class="icon out"></ion-icon>
         </div>
     </div>
-
     
-    <div class="caixa-stories">
+    <div class="sidebar">                           <!--barra lateral do perfil-->
+        <div class="profile">
+            <img src="perfil.jpg" class="user" />
+            <div class="user-name">
+                <h1>joaolucas_</h1>
+                <h2>João Lucas Mendes Wetler</h2>
+            </div>
+        </div>
+
+        <div class="sugestoes">
+            <span class="sugestao">Sugestões para você</span>
+            <span class="bold">Ver tudo</span>
+        </div>
+        <div class="sugestoes">                    <!--perfis sugeridos-->
+            <img src="9gag.jpg" class="img32"/>
+            <div class="user-sugestao">
+                <div>
+                    <h1>9gag</h1>
+                    <h2>Novo no Instagram</h2>
+                </div>
+                <span class="text bold">Seguir</span>
+            </div> 
+        </div>
+        <div class="sugestoes">
+            <img src="bad-vibes.jpg" class="img32"/>
+            <div class="user-sugestao">
+                <div>
+                    <h1>bad.vibes.memes</h1>
+                    <h2>Segue você</h2>
+                </div>
+                <p class="text bold">Seguir</p>
+            </div> 
+        </div><div class="sugestoes">
+            <img src="goskt.jpg" class="img32"/>
+            <div class="user-sugestao">
+                <div>
+                    <h1>goskateshop</h1>
+                    <h2>Segue você</h2>
+                </div>
+                <p class="text bold">Seguir</p>
+            </div> 
+        </div><div class="sugestoes">
+            <img src="cultura.jpg" class="img32"/>
+            <div class="user-sugestao">
+                <div>
+                    <h1>culturaheadshop</h1>
+                    <h2>Segue você</h2>
+                </div>
+                <p class="text bold">Seguir</p>
+            </div> 
+        </div>
+        
+    </div>
+
+  
+    <div class="caixa-stories">                          <!--layout da caixa dos stories-->
         <div class="user-pic">
             <div class="story">
                 <img src="cultura.jpg" class="user margem" />
@@ -63,7 +119,7 @@
         
         <div class="usuario">
             <div class="caixa-user">
-                <p>cultura420</p>
+                <p>culturahe...</p>
             </div>
 
             <div class="caixa-user">
@@ -90,36 +146,294 @@
                 <p>agazetaes</p>
             </div>
 
-
+            <div class="caixa-user lateral">
+                <p>gosk</p>
             </div>
         </div>
     </div>
 
-    <div class="post">
+    <div class="post">      <!--Posts da timeline-->
         <div class="perfil">
-            <img src="duda-perfil.jpg" />
-            <div class="username">
+                <img src="duda-perfil.jpg" />
                 <h1>_dudaschmidt</h1>
-            </div>
-            
+            <ion-icon name="ellipsis-horizontal-outline" class="points"></ion-icon>
         </div>
         <img src="duda.jpg" class="foto"/>
-        <div class="post-bottom">
+        <div class="post-bottom">   <!--ícones, likes e comentarios-->
+            <div class="likes">
+                <ion-icon name="heart-outline" class="heart"></ion-icon>
+                <ion-icon name="chatbubble-outline" class="icon"></ion-icon>
+                <ion-icon name="paper-plane-outline" class="icon"></ion-icon>
+                <ion-icon name="bookmark-outline" class="save"></ion-icon>
+            </div>
+            <div class="likes">
+                <img src="perfil.jpg" class="curtida"/>
+                Curtido por <span class="bold">joaolucas_</span> e <span class="bold">outras 536 pessoas</span>
+            </div>
             
+            <div class="comments">
+                <span class="bold">_dudaschmidt </span> 🌻✨
+            </div>
+
+            <div class="comments">
+                <span class="bold">joaolucas_ </span> lindaa
+                <ion-icon name="heart-outline" class="like-comment"></ion-icon> 
+            </div>
+
+            <div class="comments">
+                <span class="bold">fulano </span> massaa
+                <ion-icon name="heart-outline" class="like-comment"></ion-icon>
+            </div>
+
+            <div class="comments">
+                <p class="hora">HÁ 13 HORAS</h2>
+            </div>
+
+        </div>
+        <div class="add-comment">
+            <ion-icon name="happy-outline" class="insta-icon"></ion-icon>
+            <input type="text" name="Nome" size="60" class="text-box" placeholder="Adicione um comentário..."/>
+            <p class="publi bold">Publicar</p>
         </div>
     </div>
 
-    <div class="post">
+
+    <div class="post">       <!--Posts da timeline-->
         <div class="perfil">
-            <img src="perfil.jpg" />
-            <div class="username">
+                <img src="perfil.jpg" />
                 <h1>joaolucas_</h1>
-            </div>
+                <ion-icon name="ellipsis-horizontal-outline" class="points"></ion-icon>
         </div>
         <img src="rock-in-rio.jpg" class="foto"/>
-        <div class="post-bottom">
+
+        <div class="post-bottom">   <!--ícones-->
+            <div class="likes">
+                <ion-icon name="heart-outline" class="heart"></ion-icon>
+                <ion-icon name="chatbubble-outline" class="icon"></ion-icon>
+                <ion-icon name="paper-plane-outline" class="icon"></ion-icon>
+                <ion-icon name="bookmark-outline" class="save"></ion-icon>
+            </div>
             
+            <div class="likes">
+                <img src="duda-perfil.jpg" class="curtida"/>
+                Curtido por <span class="bold">_dudaschmidt</span> e <span class="bold">outras 397 pessoas</span>
+            </div> 
+            
+            <div class="comments">
+                <span class="bold">joaolucas_</span> Que dia! Evento irado demais 🤘💥
+            </div>
+
+            <div class="comments">
+                <span class="bold">gabrielmfacini</span> Muuuuito foda!!!
+                <ion-icon name="heart-outline" class="like-comment"></ion-icon> 
+            </div>
+
+            <div class="comments">
+                <span class="bold">_dudaschmidt</span> Bom demaissss ❤️
+                <ion-icon name="heart-outline" class="like-comment"></ion-icon>
+            </div>
+
+            <div class="comments">
+                <p class="hora">HÁ 13 HORAS</h2>
+            </div>
+        </div>
+        <div class="add-comment">
+            <ion-icon name="happy-outline" class="insta-icon"></ion-icon>
+            <input type="text" name="Nome" size="60" class="text-box" placeholder="Adicione um comentário..."/>
+            <p class="publi bold">Publicar</p>
         </div>
     </div>
+
+    <div class="post">       <!--Posts do video-->
+        <div class="perfil">
+            <img src="perfil.jpg" />
+            <h1>joaolucas_</h1>
+            <ion-icon name="ellipsis-horizontal-outline" class="points"></ion-icon>
+        </div>
+        
+        <video autoplay loop muted width="612">
+            <source src="video.mp4" type="video/mp4" >
+            <source src="video.ogv" type="video/ogv" >
+            Your browser does not support the video tag.
+        </video>
+
+        <div class="post-bottom">   <!--ícones-->
+            <div class="likes">
+                <ion-icon name="heart-outline" class="heart"></ion-icon>
+                <ion-icon name="chatbubble-outline" class="icon"></ion-icon>
+                <ion-icon name="paper-plane-outline" class="icon"></ion-icon>
+                <ion-icon name="bookmark-outline" class="save"></ion-icon>
+            </div>
+            
+            <div class="likes">
+                <img src="duda-perfil.jpg" class="curtida"/>
+                Curtido por <span class="bold">_dudaschmidt</span> e <span class="bold">outras 954 pessoas</span>
+            </div>  
+            
+            <div class="comments">
+                <span class="bold">thedarksideofnature</span> Caption this
+            </div>
+
+            <div class="comments">
+                <span class="bold">bruno_carlos</span> Esperei a mordida, mas não veio 😢
+                <ion-icon name="heart-outline" class="like-comment"></ion-icon> 
+            </div>
+
+            <div class="comments">
+                <span class="bold">wildanimals</span> "Not hungry now..."
+                <ion-icon name="heart-outline" class="like-comment"></ion-icon>
+            </div>
+
+            <div class="comments">
+                <p class="hora">HÁ 13 HORAS</h2>
+            </div>
+        </div>
+
+        <div class="add-comment">
+            <ion-icon name="happy-outline" class="insta-icon"></ion-icon>
+            <input type="text" name="Nome" size="60" class="text-box" placeholder="Adicione um comentário..."/>
+            <p class="publi bold">Publicar</p>
+        </div>
+    </div>
+
+    <div class="post">       <!--Posts da timeline-->
+        <div class="perfil">
+            <img src="cultura.jpg" />
+            <h1>culturaheadshop</h1>
+            <ion-icon name="ellipsis-horizontal-outline" class="points"></ion-icon>
+        </div>
+        <img src="bandeja.jpg" class="foto"/>
+
+        <div class="post-bottom">   <!--ícones-->
+            <div class="likes">
+                <ion-icon name="heart-outline" class="heart"></ion-icon>
+                <ion-icon name="chatbubble-outline" class="icon"></ion-icon>
+                <ion-icon name="paper-plane-outline" class="icon"></ion-icon>
+                <ion-icon name="bookmark-outline" class="save"></ion-icon>
+            </div>
+            
+            <div class="likes">
+                <img src="perfil.jpg" class="curtida"/>
+                Curtido por <span class="bold">joaolucas_</span> e <span class="bold">outras 598 pessoas</span>
+            </div>    
+            
+            <div class="comments">
+                <span class="bold">culturaheadshop</span> Bandeja Cultura 420? Agora tem! 🤩
+            </div>
+
+            <div class="comments">
+                <span class="bold">luciaramodolo</span> Alerta de spoiler: uma de cada cor por favor haha 🔥😍
+                <ion-icon name="heart-outline" class="like-comment"></ion-icon> 
+            </div>
+
+            <div class="comments">
+                <span class="bold">viniciustose</span> Cê é louco, o cara vai dominar o BR 🔥🔥
+                <ion-icon name="heart-outline" class="like-comment"></ion-icon>
+            </div>
+
+            <div class="comments">
+                <p class="hora">HÁ 2 DIAS</h2>
+            </div>
+        </div>
+        <div class="add-comment">
+            <ion-icon name="happy-outline" class="insta-icon"></ion-icon>
+            <input type="text" name="Nome" size="60" class="text-box" placeholder="Adicione um comentário..."/>
+            <p class="publi bold">Publicar</p>
+        </div>
+    </div>
+
+    <div class="post">       <!--Posts da timeline-->
+        <div class="perfil">
+            <img src="gazeta.jpg" />
+            <h1>agazetaes</h1>
+            <ion-icon name="ellipsis-horizontal-outline" class="points"></ion-icon>
+        </div>
+        <img src="rachadinha.jpg" class="foto"/>
+
+        <div class="post-bottom">   <!--ícones-->
+            <div class="likes">
+                <ion-icon name="heart-outline" class="heart"></ion-icon>
+                <ion-icon name="chatbubble-outline" class="icon"></ion-icon>
+                <ion-icon name="paper-plane-outline" class="icon"></ion-icon>
+                <ion-icon name="bookmark-outline" class="save"></ion-icon>
+            </div>
+            
+            <div class="likes">
+                <img src="cultura.jpg" class="curtida"/>
+                Curtido por <span class="bold">culturaheadshop</span> e <span class="bold">outras 420 pessoas</span>
+            </div>    
+            
+            <div class="comments">
+                <span class="bold">agazetaes</span> O senador Flávio Bolsonaro (PL-RJ) está envolto em mais uma ação judicial. Dessa vez, o filho do presidente da República é testemunha de um amigo, o advogado Willer Tomaz, que tenta tomar uma mansão de R$ 10 milhões em Angra dos Reis (RJ)...
+            </div>
+
+            <div class="comments">
+                <span class="bold">briiisa</span> Deve ter tentando pagar em dinheiro vivo, aí o dono não quis e vendeu pra outra pessoa 🤷🏾‍♀️😂
+                <ion-icon name="heart-outline" class="like-comment"></ion-icon> 
+            </div>
+
+            <div class="comments">
+                <span class="bold">julianof28</span> "Honesto de Taubaté"🤡
+                <ion-icon name="heart-outline" class="like-comment"></ion-icon>
+            </div>
+
+            <div class="comments">
+                <p class="hora">HÁ 13 HORAS</h2>
+            </div>
+        </div>
+        <div class="add-comment">
+            <ion-icon name="happy-outline" class="insta-icon"></ion-icon>
+            <input type="text" name="Nome" size="60" class="text-box" placeholder="Adicione um comentário..."/>
+            <p class="publi bold">Publicar</p>
+        </div>
+    </div>
+
+    <div class="post">       <!--Posts da timeline-->
+        <div class="perfil">
+            <img src="bad-vibes.jpg" />
+            <h1>bad.vibes.memes</h1>
+            <ion-icon name="ellipsis-horizontal-outline" class="points"></ion-icon>
+        </div>
+        <img src="goku.jpg" class="foto"/>
+
+        <div class="post-bottom">   <!--ícones-->
+            <div class="likes">
+                <ion-icon name="heart-outline" class="heart"></ion-icon>
+                <ion-icon name="chatbubble-outline" class="icon"></ion-icon>
+                <ion-icon name="paper-plane-outline" class="icon"></ion-icon>
+                <ion-icon name="bookmark-outline" class="save"></ion-icon>
+            </div>
+            
+            <div class="likes">
+                <img src="duda-perfil.jpg" class="curtida"/>
+                Curtido por <span class="bold">_dudaschmidt</span> e <span class="bold">outras 42871 pessoas</span>
+            </div>       
+        </div>
+
+        <div class="comments">
+            <span class="bold">bad.vibes.memes</span> Goku
+        </div>
+
+        <div class="comments">
+            <span class="bold">fulano</span> rs
+            <ion-icon name="heart-outline" class="like-comment"></ion-icon> 
+        </div>
+
+        <div class="comments">
+            <span class="bold">beltrano</span> Foda
+            <ion-icon name="heart-outline" class="like-comment"></ion-icon>
+        </div>
+
+        <div class="comments">
+            <p class="hora">HÁ 13 HORAS</h2>
+        </div>
+        <div class="add-comment">
+            <ion-icon name="happy-outline" class="insta-icon"></ion-icon>
+            <input type="text" name="Nome" size="60" class="text-box" placeholder="Adicione um comentário..."/>
+            <p class="publi bold">Publicar</p>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 </body>
 </html>

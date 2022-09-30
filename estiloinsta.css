@@ -1,5 +1,4 @@
 body {
-    width: 1366px;
     margin-left: auto;
     margin-right: auto;
     background: #FAFAFA;
@@ -8,30 +7,56 @@ body {
 }
 
 .topo {
+    display: flex;
     height: 54px;
+    width: 100%;
     background: #FFFFFF;   
-    border: 1px #DBDBDB solid;
+    border-bottom: 1px #DBDBDB solid;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 1;
 }
 
 .caixa-logo {
     height: 54px;
-    width: 614px;
-    background: #FFFFFF;
+    width: 370px;
     margin-left: 215px;    
 }
 
+.insta-icon {
+    font-size: 23px;
+    margin: 7px 20px 7px 5px;
+}
+
+.pesquisa {
+    display:flex;
+    align-items: center;
+}
+
+.pesquisar {
+    border: none;
+}
+
+.icones {
+    display: flex;
+    justify-content: center;
+    width: 550px;
+    margin-top: 5px; /*consertar*/
+}
 .caixa-logo img {
-    margin-top: 15px;
-    margin-left: 43px;
+    margin-top: 18px;
+    margin-left: 15px;
 }
 
 .caixa-stories {
     height: 118px;
     width: 614px;
     background: #FFFFFF;
-    margin-top: 34px;    
-    margin-left: 215px; 
+    margin: 88px 0px 0px 215px;    
     border: 1px #DBDBDB solid;
+    overflow: hidden;
+    border-radius: 5px;
 }
 
 .user-pic {
@@ -44,7 +69,7 @@ body {
     width: 66px;
     margin: 18px 14px 34px 0px;
     background-image: url("stories_background.jpg");
-    background-size: cover;
+    background-size: cover; /*scales the image*/
 }
 
 .story:first-child{
@@ -56,16 +81,21 @@ body {
 }
 
 .caixa-user {
-    width: 58px;
+    width: 78px;
     height: 19px;
-    margin-left: 22px;
+    margin-left: 2px;
     margin-bottom: 14px;
     text-align: center;
     align-items: center;
 }
 
+.lateral {
+    width: 43px;
+    text-align: right;
+}
+
 .caixa-user:first-child{
-    margin-left: 21px;
+    margin-left: 11px;
 }
 
 .caixa-user p {
@@ -79,11 +109,19 @@ body {
 }
 
 .sidebar {
-    display: flex;
     position: fixed;
     width: 293px;
     margin-left: 857px;
     top: 111px;
+}
+
+.profile {
+    display: flex;
+    margin-bottom: 24px ;
+}
+
+.sugestoes {
+    display: flex;
 }
 
 .user {
@@ -97,16 +135,41 @@ body {
     height: 34px;
     margin-top: 10px;
     margin-left: 17px;    
+    
+}
+
+.user-sugestao {
+    margin-top: 17px;
+    margin-left: 3px;  
+    display: flex;  
+}
+.text {
+    position: absolute;
+    right:10px;
+    color: #139EF2;
 }
 
 h1 {
     font-weight: bold;
     color: #262626;  
-    margin-bottom: 3px;  
+    margin-bottom: 5px;  
 }
 
 h2 {
     color: #8E8E8E;     
+}
+
+.sugestao {
+    margin: 0px 100px 17px 0px;
+    color: #8E8E8E
+}
+
+
+.img32 {
+    width: 32px;
+    height: 32px;
+    margin: 17px 11px 0px 0px;
+    border-radius: 50%;
 }
 
 .post {
@@ -114,10 +177,12 @@ h2 {
     background: #FFFFFF;
     margin: 24px 0px 60px 215px;   
     border: 1px #DBDBDB solid;
+    border-radius: 5px;
 }
 
 .perfil {
     display: flex;
+    align-items: center;
     width: 614px;
     height: 61px;    
 }
@@ -125,11 +190,12 @@ h2 {
 .perfil img {
     width: 32px;
     height: 32px;
-    margin: 15px 15px 0px 17px;   
+    margin: 0px 15px 0px 17px;   
 }
 
-.username{
-    margin-top: 21px;
+
+.points {
+    margin: auto 15px auto auto;
 }
 
 .foto {
@@ -138,6 +204,122 @@ h2 {
     margin-left: 1px;
 }
 
-.post-bottom{
-    height: 76px;
+.heart {
+    font-size: 24px;
+    margin: 10px 17.81px 47.44px 17.75px;
+}
+
+.icon {
+    font-size: 24px;
+    margin: 10px 17.81px 47.44px 0px;
+}
+
+.save {
+    font-size: 24px;
+    margin: 10px 0px 47.44px 420px;
+}
+.likes {
+    height: 40px;
+}
+
+.comments {
+    margin: 0px 15px 7px 17px;
+}
+
+.like-comment {
+    position: absolute;   
+    right: 610px;
+}
+
+.add-comment {
+    display: flex;
+    height: 45px;
+    width: 612px;
+    border: 1px #DBDBDB solid;
+    align-items: center;
+}
+
+.hora {
+    color: #8E8E8E;   
+    font-size: 12px; 
+    margin-top: 10px;
+}
+
+.publi {
+    color: #139EF2;
+    margin-left: 45px;
+    opacity: 0.6;
+}
+
+.publi:hover{
+    opacity: 1; 
+}
+
+.text-box {
+    outline: none;
+    border: none;
+}
+
+.curtida {
+    height: 20px;
+    margin: 0px 5px -3px 17px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+/*layout mobile*/
+
+@media (max-width: 935px) {
+   
+    .sidebar {
+        display: none;
+    }
+
+    .caixa-stories {
+        margin: 34px auto 0px auto;          
+    }
+
+    .post {
+        margin: 24px auto 60px auto;   
+    }
+
+    .caixa-logo {
+        margin-left: 25px;
+        width: 40%;
+    }
+
+
+}
+
+@media (max-width: 614px) {
+   
+    .caixa-stories {
+        background: #FAFAFA;
+        border: none;
+        margin-top: 88px;
+    }
+
+    .perfil {
+        width: 100%;  
+    }
+
+    .foto {
+        width: 100%;  
+    }
+
+    .pesquisar {
+        display: none;
+    }
+
+    .out {
+        display: none;
+    }
+
+    .icon {
+        position: absolute;
+        right: 15px;       
+    }
+
 }
